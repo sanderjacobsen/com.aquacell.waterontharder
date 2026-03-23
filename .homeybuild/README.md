@@ -1,3 +1,5 @@
+[![Ko-fi](https://img.shields.io/badge/Buy%20me%20a%20coffee-Ko--fi-FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/sanderjacobsen)
+
 # AquaCell Water Softener — Homey App
 
 Monitor your **AquaCell**, **Harvey** or **TwinTec Cobalt** water softener directly in Homey.
