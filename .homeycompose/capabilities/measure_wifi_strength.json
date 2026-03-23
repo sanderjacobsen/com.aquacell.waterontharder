@@ -1,9 +1,6 @@
 {
   "type": "number",
-  "title": {
-    "en": "Salt right side",
-    "nl": "Zout rechterkant"
-  },
+  "title": { "en": "Wifi signal strength", "nl": "Wifi signaalsterkte" },
   "units": "%",
   "min": 0,
   "max": 100,
@@ -11,6 +8,6 @@
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",
-  "icon": "/assets/capabilities/salt.svg",
+  "icon": "/assets/capabilities/wifi.svg",
   "insights": true
 }

@@ -1,6 +1,9 @@
 {
   "type": "number",
-  "title": { "en": "Salt Left Side", "nl": "Zout Linkerkant" },
+  "title": {
+    "en": "Salt left side",
+    "nl": "Zout linkerkant"
+  },
   "units": "%",
   "min": 0,
   "max": 100,

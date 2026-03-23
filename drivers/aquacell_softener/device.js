@@ -2,7 +2,7 @@
 
 const Homey = require('homey');
 
-const POLL_INTERVAL_MS = 12 * 60 * 60 * 1000;
+const POLL_INTERVAL_MS = 6 * 60 * 60 * 1000;
 
 class AquacellDevice extends Homey.Device {
 
@@ -10,7 +10,7 @@ class AquacellDevice extends Homey.Device {
     this.log('AquaCell Device initialized:', this.getName());
 
     // Register custom capabilities if not yet present
-    const caps = ['measure_salt_left', 'measure_salt_right', 'measure_salt_days_left'];
+    const caps = ['measure_salt_left', 'measure_salt_right', 'measure_salt_days_left', 'measure_last_update', 'measure_wifi_strength'];
     for (const cap of caps) {
       if (!this.hasCapability(cap)) {
         await this.addCapability(cap);
@@ -57,6 +57,7 @@ class AquacellDevice extends Homey.Device {
       measure_salt_right:     softener.saltRightPercentage,
       measure_salt_days_left: softener.saltDaysLeft,
       measure_battery:        softener.lidBatteryLevel,
+      measure_wifi_strength:  softener.wifiStrength,
     };
 
     for (const [cap, value] of Object.entries(updates)) {
@@ -68,6 +69,8 @@ class AquacellDevice extends Homey.Device {
     }
 
     // Last update as setting
+    await this.setCapabilityValue("measure_last_update", softener.lastUpdate ? new Date(softener.lastUpdate).toLocaleString("nl-NL") : "-").catch(() => {});
+
     if (softener.lastUpdate) {
       await this.setSettings({ last_update: softener.lastUpdate }).catch(() => {});
     }

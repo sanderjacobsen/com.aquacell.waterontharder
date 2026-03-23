@@ -33,6 +33,7 @@
       },
       "class": "sensor",
       "capabilities": [
+        "measure_last_update",
         "measure_battery"
       ],
       "images": {
@@ -73,33 +74,6 @@
       ],
       "settings": [
         {
-          "id": "salt_left",
-          "type": "label",
-          "label": {
-            "en": "Salt Left Side",
-            "nl": "Zout Linkerkant"
-          },
-          "value": ""
-        },
-        {
-          "id": "salt_right",
-          "type": "label",
-          "label": {
-            "en": "Salt Right Side",
-            "nl": "Zout Rechterkant"
-          },
-          "value": ""
-        },
-        {
-          "id": "days_left",
-          "type": "label",
-          "label": {
-            "en": "Days Until Empty",
-            "nl": "Dagen Tot Leeg"
-          },
-          "value": ""
-        },
-        {
           "id": "last_update",
           "type": "label",
           "label": {
@@ -113,11 +87,23 @@
     }
   ],
   "capabilities": {
+    "measure_last_update": {
+      "type": "string",
+      "title": {
+        "en": "Last updated",
+        "nl": "Laatst bijgewerkt"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": false,
+      "icon": "/assets/capabilities/last_update.svg"
+    },
     "measure_salt_days_left": {
       "type": "number",
       "title": {
-        "en": "Days Until Empty",
-        "nl": "Dagen Tot Leeg"
+        "en": "Days until empty",
+        "nl": "Dagen tot leeg"
       },
       "units": {
         "en": "days",
@@ -134,8 +120,8 @@
     "measure_salt_left": {
       "type": "number",
       "title": {
-        "en": "Salt Left Side",
-        "nl": "Zout Linkerkant"
+        "en": "Salt left side",
+        "nl": "Zout linkerkant"
       },
       "units": "%",
       "min": 0,
@@ -150,8 +136,8 @@
     "measure_salt_right": {
       "type": "number",
       "title": {
-        "en": "Salt Right Side",
-        "nl": "Zout Rechterkant"
+        "en": "Salt right side",
+        "nl": "Zout rechterkant"
       },
       "units": "%",
       "min": 0,
@@ -161,6 +147,22 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/salt.svg",
+      "insights": true
+    },
+    "measure_wifi_strength": {
+      "type": "number",
+      "title": {
+        "en": "Wifi signal strength",
+        "nl": "Wifi signaalsterkte"
+      },
+      "units": "%",
+      "min": 0,
+      "max": 100,
+      "decimals": 0,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/wifi.svg",
       "insights": true
     }
   }

@@ -5,6 +5,7 @@
   },
   "class": "sensor",
   "capabilities": [
+    "measure_last_update",
     "measure_battery"
   ],
   "images": {
@@ -17,18 +18,41 @@
       "id": "login_credentials",
       "template": "login_credentials",
       "options": {
-        "usernameLabel": { "en": "Email address", "nl": "E-mailadres" },
-        "usernamePlaceholder": { "en": "your@email.com", "nl": "uw@email.nl" },
-        "passwordLabel": { "en": "Password", "nl": "Wachtwoord" }
+        "usernameLabel": {
+          "en": "Email address",
+          "nl": "E-mailadres"
+        },
+        "usernamePlaceholder": {
+          "en": "your@email.com",
+          "nl": "uw@email.nl"
+        },
+        "passwordLabel": {
+          "en": "Password",
+          "nl": "Wachtwoord"
+        }
       }
     },
-    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
-    { "id": "add_devices", "template": "add_devices" }
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
   ],
   "settings": [
-    { "id": "salt_left",   "type": "label", "label": { "en": "Salt Left Side",   "nl": "Zout Linkerkant"  }, "value": "" },
-    { "id": "salt_right",  "type": "label", "label": { "en": "Salt Right Side",  "nl": "Zout Rechterkant" }, "value": "" },
-    { "id": "days_left",   "type": "label", "label": { "en": "Days Until Empty", "nl": "Dagen Tot Leeg"   }, "value": "" },
-    { "id": "last_update", "type": "label", "label": { "en": "Last Update",      "nl": "Laatste Update"   }, "value": "" }
+    {
+      "id": "last_update",
+      "type": "label",
+      "label": {
+        "en": "Last Update",
+        "nl": "Laatste Update"
+      },
+      "value": ""
+    }
   ]
 }

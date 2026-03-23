@@ -1,7 +1,13 @@
 {
   "type": "number",
-  "title": { "en": "Days Until Empty", "nl": "Dagen Tot Leeg" },
-  "units": { "en": "days", "nl": "dagen" },
+  "title": {
+    "en": "Days until empty",
+    "nl": "Dagen tot leeg"
+  },
+  "units": {
+    "en": "days",
+    "nl": "dagen"
+  },
   "min": 0,
   "decimals": 0,
   "getable": true,
