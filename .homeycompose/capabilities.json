@@ -1,0 +1,57 @@
+{
+  "measure_salt_left": {
+    "type": "number",
+    "title": {
+      "en": "Salt Left Side",
+      "nl": "Zout Linkerkant"
+    },
+    "units": {
+      "en": "%",
+      "nl": "%"
+    },
+    "min": 0,
+    "max": 100,
+    "decimals": 0,
+    "icon": "/assets/capabilities/salt.svg",
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "uiQuickAction": false
+  },
+  "measure_salt_right": {
+    "type": "number",
+    "title": {
+      "en": "Salt Right Side",
+      "nl": "Zout Rechterkant"
+    },
+    "units": {
+      "en": "%",
+      "nl": "%"
+    },
+    "min": 0,
+    "max": 100,
+    "decimals": 0,
+    "icon": "/assets/capabilities/salt.svg",
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "uiQuickAction": false
+  },
+  "measure_salt_days_left": {
+    "type": "number",
+    "title": {
+      "en": "Days Until Empty",
+      "nl": "Dagen Tot Leeg"
+    },
+    "units": {
+      "en": "days",
+      "nl": "dagen"
+    },
+    "min": 0,
+    "decimals": 0,
+    "getable": true,
+    "setable": false,
+    "uiComponent": "sensor",
+    "uiQuickAction": false
+  }
+}

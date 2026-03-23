@@ -1,0 +1,25 @@
+{
+  "app": {
+    "name": "AquaCell Waterontharder",
+    "description": "Monitor uw AquaCell, Harvey of TwinTec waterontharder"
+  },
+  "pairing": {
+    "login_failed": "Inloggen mislukt. Controleer uw e-mailadres en wachtwoord",
+    "fetch_failed": "Kon apparaten niet ophalen van uw account"
+  },
+  "device": {
+    "not_found": "Apparaat niet gevonden in uw account. Mogelijk is het verwijderd."
+  },
+  "settings": {
+    "last_update": "Laatste update van apparaat"
+  },
+  "flow": {
+    "salt_low_trigger": "Zoutniveau is laag",
+    "salt_below_condition": "Zoutniveau is onder drempel"
+  },
+  "capabilities": {
+    "measure_salt_left": "Zout Linkerkant",
+    "measure_salt_right": "Zout Rechterkant",
+    "measure_salt_days_left": "Dagen Tot Leeg"
+  }
+}

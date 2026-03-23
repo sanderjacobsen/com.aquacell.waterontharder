@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="0" y="0" width="100" height="100" rx="20" fill="#009FE3"/>
+  <rect x="12" y="10" width="76" height="80" rx="6" fill="none" stroke="white" stroke-width="4"/>
+  <rect x="16" y="15" width="32" height="32" rx="3" fill="none" stroke="white" stroke-width="3"/>
+  <rect x="52" y="15" width="32" height="32" rx="3" fill="none" stroke="white" stroke-width="3"/>
+  <line x1="13" y1="47" x2="87" y2="47" stroke="white" stroke-width="3"/>
+  <text x="68" y="67" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="6" letter-spacing="0.5" fill="white">AQUACELL</text>
+</svg>

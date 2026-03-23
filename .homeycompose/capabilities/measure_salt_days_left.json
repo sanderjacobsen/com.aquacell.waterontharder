@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": { "en": "Days Until Empty", "nl": "Dagen Tot Leeg" },
+  "units": { "en": "days", "nl": "dagen" },
+  "min": 0,
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/days.svg",
+  "insights": true
+}

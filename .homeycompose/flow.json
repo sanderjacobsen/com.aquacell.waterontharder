@@ -1,0 +1,97 @@
+{
+  "triggers": [
+    {
+      "id": "salt_low",
+      "title": {
+        "en": "Salt level is low",
+        "nl": "Zoutniveau is laag"
+      },
+      "hint": {
+        "en": "Triggered when either salt side drops below a threshold",
+        "nl": "Getriggerd als een kant zout onder de drempelwaarde komt"
+      },
+      "tokens": [
+        {
+          "name": "side",
+          "type": "string",
+          "title": {
+            "en": "Side",
+            "nl": "Kant"
+          },
+          "example": "left"
+        },
+        {
+          "name": "percentage",
+          "type": "number",
+          "title": {
+            "en": "Percentage",
+            "nl": "Percentage"
+          },
+          "example": 8
+        }
+      ],
+      "args": [
+        {
+          "name": "device",
+          "type": "device",
+          "filter": "driver_id=aquacell_softener"
+        },
+        {
+          "name": "threshold",
+          "type": "number",
+          "min": 1,
+          "max": 50,
+          "step": 1,
+          "label": {
+            "en": "Below (%)",
+            "nl": "Onder (%)"
+          },
+          "placeholder": {
+            "en": "e.g. 15",
+            "nl": "bijv. 15"
+          }
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "id": "salt_below",
+      "title": {
+        "en": "Salt level !{{is|is not}} below threshold",
+        "nl": "Zoutniveau !{{is|is niet}} onder drempel"
+      },
+      "args": [
+        {
+          "name": "device",
+          "type": "device",
+          "filter": "driver_id=aquacell_softener"
+        },
+        {
+          "name": "side",
+          "type": "dropdown",
+          "label": {
+            "en": "Side",
+            "nl": "Kant"
+          },
+          "values": [
+            { "id": "left", "label": { "en": "Left", "nl": "Links" } },
+            { "id": "right", "label": { "en": "Right", "nl": "Rechts" } },
+            { "id": "either", "label": { "en": "Either side", "nl": "Een van beide kanten" } }
+          ]
+        },
+        {
+          "name": "threshold",
+          "type": "number",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "label": {
+            "en": "Threshold (%)",
+            "nl": "Drempel (%)"
+          }
+        }
+      ]
+    }
+  ]
+}

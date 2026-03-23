@@ -1,0 +1,25 @@
+{
+  "app": {
+    "name": "AquaCell Water Softener",
+    "description": "Monitor your AquaCell, Harvey or TwinTec water softener"
+  },
+  "pairing": {
+    "login_failed": "Login failed. Please check your email address and password",
+    "fetch_failed": "Could not retrieve devices from your account"
+  },
+  "device": {
+    "not_found": "Device not found in your account. It may have been removed."
+  },
+  "settings": {
+    "last_update": "Last update from device"
+  },
+  "flow": {
+    "salt_low_trigger": "Salt level is low",
+    "salt_below_condition": "Salt level is below threshold"
+  },
+  "capabilities": {
+    "measure_salt_left": "Salt Left Side",
+    "measure_salt_right": "Salt Right Side",
+    "measure_salt_days_left": "Days Until Empty"
+  }
+}

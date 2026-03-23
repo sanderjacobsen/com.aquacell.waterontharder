@@ -1,0 +1,25 @@
+{
+  "name": "com.aquacell.waterontharder",
+  "version": "1.0.0",
+  "description": "AquaCell Water Softener app for Homey",
+  "main": "app.js",
+  "scripts": {
+    "build": "homey app build",
+    "publish": "homey app publish",
+    "run": "homey app run"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "homey",
+    "aquacell",
+    "water softener",
+    "waterontharder"
+  ],
+  "author": "Community",
+  "license": "MIT",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^6.3.16"
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="8" y="1" width="84" height="97" rx="8"
+        fill="none" stroke="currentColor" stroke-width="4"/>
+  <rect x="12" y="8" width="34" height="38" rx="3"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <rect x="54" y="8" width="34" height="38" rx="3"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <line x1="9" y1="46" x2="91" y2="46"
+        stroke="currentColor" stroke-width="3"/>
+  <text x="66" y="65" text-anchor="middle"
+        font-family="sans-serif" font-weight="700"
+        font-size="6.5" letter-spacing="0.5"
+        fill="currentColor">AQUACELL</text>
+</svg>
