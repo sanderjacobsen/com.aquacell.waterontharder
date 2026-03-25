@@ -4,6 +4,9 @@
     "nl": "AquaCell Waterontharder"
   },
   "class": "sensor",
+  "energy": {
+    "batteries": ["INTERNAL"]
+  },
   "capabilities": [
     "measure_last_update",
     "measure_battery"
