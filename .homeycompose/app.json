@@ -1,7 +1,7 @@
 {
   "id": "com.aquacell.waterontharder",
   "brandColor": "#1473EA",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "name": {
