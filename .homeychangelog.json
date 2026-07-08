@@ -13,5 +13,8 @@
   },
   "1.0.5": {
     "en": "Added store links and updated description"
+  },
+  "1.0.6": {
+    "en": "Added support forum link and improved capability icons"
   }
 }

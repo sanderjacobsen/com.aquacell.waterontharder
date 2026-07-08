@@ -1,7 +1,7 @@
 {
   "id": "com.aquacell.waterontharder",
   "brandColor": "#1473EA",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "name": {
@@ -123,5 +123,5 @@
   "bugs": {
     "url": "https://github.com/sanderjacobsen/com.aquacell.waterontharder/issues"
   },
-  "support": "https://community.homey.app/"
+  "support": "https://community.homey.app/t/app-pro-aquacell-water-softener/157046"
 }
