@@ -1,7 +1,7 @@
 {
   "id": "com.aquacell.waterontharder",
   "brandColor": "#1473EA",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "name": {
@@ -9,8 +9,8 @@
     "nl": "AquaCell"
   },
   "description": {
-    "en": "Monitor your AquaCell water softener",
-    "nl": "Monitor uw AquaCell waterontharder"
+    "en": "Always know exactly when your AquaCell needs salt — right on your Homey.",
+    "nl": "Weet altijd precies wanneer je AquaCell zout nodig heeft — direct op je Homey."
   },
   "category": [
     "appliances"
@@ -22,8 +22,7 @@
     "xlarge": "/assets/images/xlarge.png"
   },
   "author": {
-    "name": "Community",
-    "email": "info@example.com"
+    "name": "Sander Jacobsen"
   },
   "drivers": [
     {
@@ -111,5 +110,18 @@
       ],
       "id": "aquacell_softener"
     }
-  ]
+  ],
+  "contributors": {
+    "developers": [
+      {
+        "name": "Sander Jacobsen"
+      }
+    ]
+  },
+  "source": "https://github.com/sanderjacobsen/com.aquacell.waterontharder",
+  "homepage": "https://github.com/sanderjacobsen/com.aquacell.waterontharder",
+  "bugs": {
+    "url": "https://github.com/sanderjacobsen/com.aquacell.waterontharder/issues"
+  },
+  "support": "https://community.homey.app/"
 }
