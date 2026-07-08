@@ -1,18 +1,3 @@
-The AquaCell app for Homey allows you to monitor your Culligan AquaCell water softener directly from your Homey.
+Keep your Culligan AquaCell water softener running smoothly without ever guessing when it needs attention. This app brings your softener straight to your Homey, showing the salt level of both compartments, how many days of soft water you have left, and the i-Lid battery and Wi-Fi status at a glance.
 
-Features:
-- Monitor salt level (left and right)
-- Days until salt is empty
-- Battery status
-- WiFi signal strength
-- Last update time
-
-Requirements:
-- A Culligan AquaCell water softener
-- An active AquaCell account (app login credentials)
-
-Setup:
-1. Install the app
-2. Add a new device
-3. Log in with your AquaCell email and password
-4. Your water softener will appear automatically
+Add your softener in seconds by logging in with your AquaCell account, and let Homey keep watch. Combine it with flows to get a timely reminder before the salt runs out, so you always enjoy soft water and never get caught off guard.
