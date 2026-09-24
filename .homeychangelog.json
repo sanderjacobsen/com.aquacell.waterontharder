@@ -19,5 +19,8 @@
   },
   "1.0.7": {
     "en": "Fixed data no longer updating after an AquaCell firmware update"
+  },
+  "1.0.8": {
+    "en": "Change polling interval to 1 hour"
   }
 }
