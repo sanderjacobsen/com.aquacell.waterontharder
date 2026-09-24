@@ -16,5 +16,8 @@
   },
   "1.0.6": {
     "en": "Added support forum link and improved capability icons"
+  },
+  "1.0.7": {
+    "en": "Fixed data no longer updating after an AquaCell firmware update"
   }
 }
