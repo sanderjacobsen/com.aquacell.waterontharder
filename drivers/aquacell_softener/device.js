@@ -2,7 +2,7 @@
 
 const Homey = require('homey');
 
-const POLL_INTERVAL_MS = 6 * 60 * 60 * 1000;
+const POLL_INTERVAL_MS = 60 * 60 * 1000;
 
 class AquacellDevice extends Homey.Device {
 
