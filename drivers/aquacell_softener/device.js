@@ -42,9 +42,16 @@ class AquacellDevice extends Homey.Device {
     }
 
     const softeners = await api.getAllSofteners();
-    const softener = softeners.find(s => s.serialNumber === serialNumber);
+    // Serienummer kan wijzigen na een firmware-update (bijv. prefix 'HRVARC-00')
+    const norm = v => String(v || '').toUpperCase();
+    const id = norm(serialNumber);
+    const softener =
+      softeners.find(s => norm(s.serialNumber) === id) ||
+      softeners.find(s => norm(s.serialNumber).endsWith(id) || id.endsWith(norm(s.serialNumber))) ||
+      (softeners.length === 1 ? softeners[0] : null);
 
     if (!softener) {
+      this.error('Softener not found. Stored id:', serialNumber, 'Available:', softeners.map(s => s.serialNumber).join(', '));
       this.setUnavailable(this.homey.__('device.not_found'));
       return;
     }
